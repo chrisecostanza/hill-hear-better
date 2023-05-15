@@ -1,9 +1,9 @@
 <div id="home-hero" style="background-image: url({{ the_field('hero_image') }})">
   <div class="container">
     <h1>{{ the_field('hero_h1') }}</h1>
-    <a href={{ the_field('hero_button_1_url') }} class="btn btn-dark-blue contact-btn">{{ the_field('hero_button_1_text') }}</a>
+    <a href={{ the_field('hero_button_1_url') }} class="btn contact-btn">{{ the_field('hero_button_1_text') }}</a>
     <div class="dropdown location-dropdown">
-      <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">{{ the_field('hero_button_2_text') }}</a>
+      <a class="btn btn-dark-blue dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">{{ the_field('hero_button_2_text') }}</a>
       <ul class="dropdown-menu">
         @php if ( have_rows('location_button_list', 'option') ) : @endphp
           @php while ( have_rows('location_button_list', 'option') ) : the_row() @endphp
@@ -73,7 +73,7 @@
         <h2>{{ the_field('brain_h2') }}</h2>
         {{ the_field('brain_paragraph') }}
         <div class="dropdown location-dropdown">
-          <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">{{ the_field('hero_button_2_text') }}</a>
+          <a class="btn btn-dark-blue dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">{{ the_field('brain_button_text') }}</a>
           <ul class="dropdown-menu">
             @php if ( have_rows('location_button_list', 'option') ) : @endphp
               @php while ( have_rows('location_button_list', 'option') ) : the_row() @endphp
@@ -93,7 +93,7 @@
   <div class="container">
     <h2>Listen To Our Clients</h2>
     <div class="google-reviews">
-      @php echo do_shortcode( '[grw id="128"]' ) @endphp
+      @php echo do_shortcode( '[brb_collection id="2883"]' ) @endphp
     </div>
   </div>
 </div>

@@ -1,8 +1,24 @@
 #contact-page {
-  background-image: linear-gradient(to right, $white 0%, $white 50%, $dark-blue 50%, $dark-blue 100%);
+  background-image: none;
+
+  @media (min-width: 768px) {
+    background-image: linear-gradient(to right, $white 0%, $white 50%, $dark-blue 50%, $dark-blue 100%);
+  }
+
+  .container {
+    padding: 0;
+
+    @media (min-width: 768px) {
+      padding: 0 15px;
+    }
+  }
 
   .col-left {
-    padding: 65px 50px 65px 0;
+    padding: 65px 15px;
+
+    @media (min-width: 768px) {
+      padding: 65px 50px 65px 15px;
+    }
 
     h2,
     h3 {
@@ -36,7 +52,13 @@
     background-repeat: no-repeat;
     background-size: auto;
     background-position: bottom center;
-    padding: 65px 0 155px 50px;
+    background-color: $dark-blue;
+    padding: 65px 15px 155px;
+
+    @media (min-width: 768px) {
+      padding: 65px 15px 155px 50px;
+      background-color: transparent;
+    }
 
     .contact-form-container {
       .infusion-field {

@@ -34,7 +34,7 @@
   <div class="container">
     <h2>Our Client's Reviews</h2>
     <div class="google-reviews">
-      @php echo do_shortcode( '[grw id="128"]' ) @endphp
+      @php echo do_shortcode( '[brb_collection id="2883"]' ) @endphp
     </div>
   </div>
 </div>

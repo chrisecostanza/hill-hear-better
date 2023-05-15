@@ -15,6 +15,7 @@
 
   .review-buttons {
     display: flex;
+    flex-wrap: wrap;
     align-items: flex-start;
     justify-content: center;
     gap: 30px 40px;

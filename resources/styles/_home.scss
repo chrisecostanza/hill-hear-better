@@ -9,7 +9,7 @@
   @media (min-width: 768px) {
     text-align: left;
     height: 600px;
-    padding-top: 90px;
+    padding-top: 55px;
   }
 
   h1 {
@@ -18,6 +18,8 @@
     max-width: 520px;
     margin-left: auto;
     margin-right: auto;
+    color: $white;
+    text-shadow: 0 1px 4px rgba(0 48 82 / 50%);
 
     @media (min-width: 768px) {
       text-align: left;

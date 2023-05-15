@@ -28,7 +28,7 @@
       </div>
       <div class="col-12 col-md-8 col-right">
         @if ( get_field('member_video_id') )
-          <a href="#" class="video-trigger btn btn-dark-blue" data-bs-toggle="modal" data-bs-target="#member-video">Watch {{ the_field('member_first_name') }}'s Video</a>
+          <a href="#" class="video-trigger btn btn-dark-blue" data-bs-toggle="modal" data-bs-target="#member-video">{{ the_field('member_video_button_title') }}</a>
 
           <!-- Modal -->
           <div class="modal fade video-modal" id="member-video" tabindex="-1" aria-labelledby="memberVideoLabel" aria-hidden="true">

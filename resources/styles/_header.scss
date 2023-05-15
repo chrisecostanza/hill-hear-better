@@ -207,7 +207,7 @@ header {
 
   .navbar-toggler-icon {
     width: 20px;
-    height: 17px;
+    height: 20px;
     background: none;
     border-radius: 0;
 
@@ -216,7 +216,11 @@ header {
       height: 3px;
       background-color: $dark-blue;
       margin: 0 0 5px;
-      border-radius: 1px;
+      border-radius: 0;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
   }
 }
@@ -325,7 +329,7 @@ header {
       }
 
       li {
-        margin-bottom: 0;
+        margin-bottom: 10px;
 
         a {
           padding-bottom: 0;
@@ -347,6 +351,10 @@ header {
     flex-direction: column;
     gap: 10px;
     margin: 20px 0;
+
+    .nav-phone-link {
+      font-weight: $weight-bold;
+    }
   }
 
   .mobile-social {

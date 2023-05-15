@@ -4,7 +4,7 @@
   <div class="container">
     <div class="row align-items-center">
       <div class="col-12 col-md-5 col-left">
-        <img src="@asset('images/why-choose-perfect-fit-photo.jpg')" alt="Ryan Hill fitting hearing aid">
+        <img src="{{ the_field('perfect_fit_photo') }}" alt="Ear Exam">
       </div>
       <div class="col-12 col-md-7 col-right">
         <div class="content-container">
